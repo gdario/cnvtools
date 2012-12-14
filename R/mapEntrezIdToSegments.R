@@ -32,8 +32,10 @@ mapEntrezIdToSegments <- function(entrezid, segmentFile=NULL) {
     ovl <- findOverlaps(Ranges, SegRanges)
 
     eid <- Ranges$entrezgene[queryHits(ovl)]
-    segs <- as.data.frame(mcols(SegRanges)[subjectHits(ovl), ],
-                          stringsAsFactors = FALSE)
+    segs <- mcols(SegRanges)[subjectHits(ovl), ]
+
+    ## Convert segs into a data frame
+    segs <- as(segs, "data.frame")
     
     out <- data.frame(entrez_id = eid, segs,
                       stringsAsFactors = FALSE)
