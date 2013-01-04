@@ -7,6 +7,7 @@
 ##' @param entrezid character vector containing the ENTREZ IDs
 ##' @return a character vector containing the CNV probes.
 ##' @author Giovanni d'Ario
+##' @export
 mapGeneToProbes <- function(entrezid,
                             markerRangesFile = paste("..",
                                 "compare_ge_and_cnv",

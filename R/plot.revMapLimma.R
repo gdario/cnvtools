@@ -278,6 +278,19 @@ zoomIn <- function(CoefAndPvals, zoom) {
 }
 
 ##################################################################
+##' Plot the results of revMapLimmaFit
+##'
+##' Plot the results of revMapLimmaFit
+##' @title plot.revMapLimmaFit
+##' @param revMapLimmaFit 
+##' @param zoom 
+##' @param pv.lim 
+##' @param legend 
+##' @param p.adj 
+##' @return the function returns no object, but plots the results
+##' of revMapLimmaFit as a side effect.
+##' @author Giovanni d'Ario
+##' @export
 plot.revMapLimmaFit <- function(revMapLimmaFit=NULL,
                                 zoom=NULL,
                                 pv.lim=0.05,

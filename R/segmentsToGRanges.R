@@ -10,6 +10,7 @@
 ##' @return an object of class \code{GenomicRanges} containing the
 ##' genomic coordinates of the segments.
 ##' @author Giovanni d'Ario
+##' @export
 segmentsToGRanges <- function(segments) {
     ## Fix the chromosomes (X is represented as 23 and Y as 24,
     ## and not as letters.

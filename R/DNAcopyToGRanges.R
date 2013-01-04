@@ -18,6 +18,7 @@
 ##' contained in the \code{output} component of the \code{DNAcopy}
 ##' object.
 ##' @author Giovanni d'Ario
+##' @export
 DNAcopyToGRanges <- function(x, chromlen=NULL) {
     require(GenomicRanges)
 

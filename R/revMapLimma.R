@@ -1,7 +1,7 @@
-##' .. content for \description{} (no empty lines) ..
+##' Perform the reverse-mapped limma analysis.
 ##'
-##' .. content for \details{} ..
-##' @title 
+##' 
+##' @title revMapLimma
 ##' @param formula 
 ##' @param RevMappedCN 
 ##' @param clinicalInfo 
@@ -9,8 +9,10 @@
 ##' @param saveOutput 
 ##' @param match 
 ##' @param matchCol 
-##' @return 
-##' @author ubuntu
+##' @return an (invisible) object of class revMapLimmaFit
+##' @author Giovanni d'Ario
+##'
+##' @export
 revMapLimma <- function(formula=NULL,
                         RevMappedCN=NULL,
                         clinicalInfo=commonAnnotationGEandCNV,

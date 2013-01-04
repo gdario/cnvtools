@@ -17,6 +17,7 @@
 ##' @return a vector of segmentation mean values whose names are the
 ##' names of the probes falling within that segment.
 ##' @author Giovanni d'Ario
+##' @export
 seg2assay <- function(segs, assayRanges, assayData) {
 	
 	## Sorting never hurts...

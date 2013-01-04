@@ -6,7 +6,8 @@
 ##' genes of interest.
 ##' 
 ##' @return and object of class \code{GenomicRanges}.
-##' @author ubuntu
+##' @author Giovanni d'Ario
+##' @export
 entrezToGRanges <- function(entrezid) {
     require(biomaRt)
     require(GenomicRanges)
