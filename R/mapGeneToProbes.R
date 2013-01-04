@@ -8,14 +8,9 @@
 ##' @return a character vector containing the CNV probes.
 ##' @author Giovanni d'Ario
 ##' @export
-mapGeneToProbes <- function(entrezid,
-                            markerRangesFile = paste("..",
-                                "compare_ge_and_cnv",
-                                "RData",
-                                "MarkerRanges.RData",
-                                sep = .Platform$file.sep)) {
+mapGeneToProbes <- function(entrezid) {
     if(!exists("MarkerRanges"))
-        load(markerRangesFile)
+        data(MarkerRanges)
     
     GeneRanges <- entrezToGRanges(entrezid)
     probes <- getOverlappingRanges(GeneRanges, MarkerRanges)$probe_id
